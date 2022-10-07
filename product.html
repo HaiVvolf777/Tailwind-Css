@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tailwind Websites
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/Images/logo.png" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="main.css" rel="stylesheet">
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+  </style>
+  </head>
+  
+  <body class="antialiased bg-gray-200">
+      <header class="lg:px-16 px-6 bg-gray-900 flex flex-wrap items-center lg:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
+          <a href="index.html">
+           <img src="/Images/logo.png" class="w-14 h-14 text-white p-2 rounded-full" alt="">
+        </a>
+      </div>
+    
+       <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+    
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul class="lg:flex items-center justify-between text-base  pt-4 lg:pt-0">
+            <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500" href="index.html">HOME</a></li>
+            <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-cyan-500 font-bold border-transparent hover:border-white hover:text-white" href="product.html">PORDUCTS</a></li>
+            <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500" href="road.html">ROAD MAP</a></li>
+            <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500 lg:mb-0 mb-2" href="about.html">ABOUT US</a></li>
+          </ul>
+        </nav>
+      </div>
+     </header>
+
+
+<main>
+
+     <section class="pb-20 relative block ">
+
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-24">
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="wrapper">
+                        <div id="search-container">
+                            <input type="search" id="search-input" placeholder="Search product here..."
+                                class="border-gray-900  h-10 w-96 rounded-xl px-4 py-4 border-2 focus:outline-none hover:border-cyan-500" />
+                            <button id="search"
+                                    class=" border-slate-700 border-2 rounded-xl h-10 px-2 py-2 font-bold text-black hover:text-cyan-500 hover:border-cyan-500">Search</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+                
+
+                <div id="buttons" class="m-6 justify-start ml-32 ">
+                
+                    <button
+                        class="button-value w-1/5  mr-6 border-slate-700 border-2 rounded-xl h-10 px-2 py-2 font-bold text-black hover:text-cyan-500 hover:border-cyan-500"
+                        onclick="filterProduct('#')">
+                       BOKAYS
+                    </button>
+
+                    <button
+                        class="button-value w-1/5 mr-6 border-slate-700 border-2 rounded-xl h-10 px-2 py-2 font-bold text-black hover:text-cyan-500 hover:border-cyan-500"
+                        onclick="filterProduct('#')">
+                        HEARTS
+                    </button>
+
+                    <button
+                        class="button-value w-1/5 mr-6 border-slate-700 border-2 rounded-xl h-10 px-2 py-2 font-bold text-black hover:text-cyan-500 hover:border-cyan-500"
+                        onclick="filterProduct('#')">
+                       TEDDIES
+                    </button>
+
+                    <button
+                        class="button-value w-1/5 mr-6 border-slate-700 border-2 rounded-xl h-10 px-2 py-2 font-bold text-black hover:text-cyan-500 hover:border-cyan-500"
+                        onclick="filterProduct('#')">
+                        FLOWERS
+                    </button>
+                </div>
+                <div id="products"></div>
+            
+
+        </section>
+
+        <section class="pb-20 bg-gray-900 -mt-24">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-wrap">
+                <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                  <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                    rounded-lg">
+                    <div class="px-4 py-5 flex-auto">
+                        <div class="mb-4">
+                            <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt="">
+                        </div>
+                        <h6 class="text-xl font-semibold uppercase">#12345 </h6>
+                      <h6 class="text-xl font-semibold uppercase">Beast flower</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                    <div
+                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                      rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                          <div class="mb-4">
+                              <img src="/images/heart.avif" class="max-w-full h-auto rounded-lg" alt="">
+                          </div>
+                          <h6 class="text-xl font-semibold uppercase">#67890 </h6>
+                        <h6 class="text-xl font-semibold uppercase">wolfs heart</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                    <div
+                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                      rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                          <div class="mb-4">
+                              <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="">
+                          </div>
+                          <h6 class="text-xl font-semibold uppercase">#23451</h6>
+                        <h6 class="text-xl font-semibold uppercase">Beast Teddy</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                    <div
+                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                      rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                          <div class="mb-4">
+                              <img src="/images/rose.avif" class="max-w-full h-auto rounded-lg" alt="">
+                          </div>
+                          <h6 class="text-xl font-semibold uppercase">#73768 </h6>
+                        <h6 class="text-xl font-semibold uppercase">Red rose</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                    <div
+                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                      rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                          <div class="mb-4">
+                              <img src="/images/boky.avif" class="max-w-full h-auto rounded-lg" alt="">
+                          </div>
+                          <h6 class="text-xl font-semibold uppercase">#97353 </h6>
+                        <h6 class="text-xl font-semibold uppercase">Fresh rose</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                    <div
+                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                      rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                          <div class="mb-4">
+                              <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt="">
+                          </div>
+                          <h6 class="text-xl font-semibold uppercase">#12345 </h6>
+                        <h6 class="text-xl font-semibold uppercase">Beast flower</h6>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                      <div
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                        rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="mb-4">
+                                <img src="/images/heart.avif" class="max-w-full h-auto rounded-lg" alt="">
+                            </div>
+                            <h6 class="text-xl font-semibold uppercase">#67890 </h6>
+                          <h6 class="text-xl font-semibold uppercase">wolfs heart</h6>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                      <div
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                        rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="mb-4">
+                                <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="">
+                            </div>
+                            <h6 class="text-xl font-semibold uppercase">#23451</h6>
+                          <h6 class="text-xl font-semibold uppercase">Beast Teddy</h6>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                      <div
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                        rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="mb-4">
+                                <img src="/images/rose.avif" class="max-w-full h-auto rounded-lg" alt="">
+                            </div>
+                            <h6 class="text-xl font-semibold uppercase">#73768 </h6>
+                          <h6 class="text-xl font-semibold uppercase">Red rose</h6>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                      <div
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                        rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="mb-4">
+                                <img src="/images/boky.avif" class="max-w-full h-auto rounded-lg" alt="">
+                            </div>
+                            <h6 class="text-xl font-semibold uppercase">#97353 </h6>
+                          <h6 class="text-xl font-semibold uppercase">Fresh rose</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                        <div
+                          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                          rounded-lg">
+                          <div class="px-4 py-5 flex-auto">
+                              <div class="mb-4">
+                                  <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt="">
+                              </div>
+                              <h6 class="text-xl font-semibold uppercase">#12345 </h6>
+                            <h6 class="text-xl font-semibold uppercase">Beast flower</h6>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                          <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                            rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div class="mb-4">
+                                    <img src="/images/heart.avif" class="max-w-full h-auto rounded-lg" alt="">
+                                </div>
+                                <h6 class="text-xl font-semibold uppercase">#67890 </h6>
+                              <h6 class="text-xl font-semibold uppercase">wolfs heart</h6>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                          <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                            rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div class="mb-4">
+                                    <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="">
+                                </div>
+                                <h6 class="text-xl font-semibold uppercase">#23451</h6>
+                              <h6 class="text-xl font-semibold uppercase">Beast Teddy</h6>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                          <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                            rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div class="mb-4">
+                                    <img src="/images/rose.avif" class="max-w-full h-auto rounded-lg" alt="">
+                                </div>
+                                <h6 class="text-xl font-semibold uppercase">#73768 </h6>
+                              <h6 class="text-xl font-semibold uppercase">Red rose</h6>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="lg:pt-12 pt-6 w-full md:w-1/5 px-4 text-center">
+                          <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg 
+                            rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div class="mb-4">
+                                    <img src="/images/boky.avif" class="max-w-full h-auto rounded-lg" alt="">
+                                </div>
+                                <h6 class="text-xl font-semibold uppercase">#97353 </h6>
+                              <h6 class="text-xl font-semibold uppercase">Fresh rose</h6>
+                            </div>
+                          </div>
+                        </div>
+
+              </div>
+            </div>   
+ </section>
+
+</main>
+
+
+
+
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl font-semibold">Keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                        Find us on any of these platforms,
+                    </h5>
+                    <div class="mt-6">
+                        <button
+                            class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-twitter"></i></button>
+                        <button
+                            class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-facebook-square"></i></button><button
+                            class="bg-white text-blue-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-linkedin"></i></button><button
+                            class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-github"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                        href="#">Github</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+
+
+                                <li>
+                                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                        href="#">Privacy Policy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-400" />
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-gray-600 font-semibold py-1">
+                        Copyright © 2022 Peaceful Unicorn
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Creative Team</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100'))
+                : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+
+        function toggleNavbar(collapseID) {
+            document.getElementById(collapseID).classList.toggle("hidden");
+            document.getElementById(collapseID).classList.toggle("block");
+        }
+    </script>
+</body>
+
+</html>

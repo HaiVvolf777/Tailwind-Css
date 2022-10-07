@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Tailwind Websites
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="/Images/logo.png" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link href="main.css" rel="stylesheet">
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<!-- Animation -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+ integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+    #menu-toggle:checked + #menu {
+      display: block;
+    }
+</style>
+</head>
+
+<body class="antialiased bg-gray-200">
+    <header class="lg:px-16 px-6 bg-gray-900 flex flex-wrap items-center lg:py-0 py-2">
+      <div class="flex-1 flex justify-between items-center">
+        <a href="index.html">
+         <img src="/Images/logo.png" class="w-14 h-14 text-white p-2 rounded-full" alt="">
+      </a>
+    </div>
+  
+     <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+  
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between text-base  pt-4 lg:pt-0">
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-cyan-500 font-bold border-transparent hover:border-white hover:text-white" href="index.html">HOME</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500" href="product.html">PORDUCTS</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500" href="road.html">ROAD MAP</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 text-white font-bold border-transparent hover:border-cyan-500 hover:text-cyan-500 lg:mb-0 mb-2" href="about.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </div>
+   </header>
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover"
+            style='background-image: url("/Images/f0880ff4a01596a95348e0e7ad6347fb.gif");'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto" data-aos="zoom-in">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                            Tailwind Websites
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <section class="pb-20 -mt-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/heart.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="" >
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/heart.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                    <img src="/images/bear.avif" class="max-w-full h-auto rounded-lg" alt="">
+                  </div>
+                    </div>
+                </div>
+
+                <div class="lg:pt-12 pt-6 w-full md:w-1/4 px-4 ">
+                    <div class="relative flex flex-col min-w-0 break-words  w-full  rounded-lg" >
+                   <div class="mb-4">
+                   <a href="#"> <img src="/images/flower.avif" class="max-w-full h-auto rounded-lg" alt=""></a>
+                  </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    </section>
+
+    
+    <section class="pb-20 relative block bg-gray-900">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-24" data-aos="zoom-in">
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold text-white">Mission</h2>
+                    <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                       <button class="bg-cyan-400 text-white font-[Poppins] duration-500 
+                       px-6 py-2 mx-4 hover:bg-cyan-500 rounded "  onclick="location.href='product.html'" type="button">
+                       Adopt An Unicorn!!!</button>
+               
+                    
+
+                </div>
+            </div>
+           </section>
+
+           
+
+           
+           
+    
+</main>
+<footer class="relative bg-gray-300 pt-8 pb-6">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+    </div>
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4">
+                <h4 class="text-3xl font-semibold">Keep in touch!</h4>
+                <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                    Find us on any of these platforms, 
+                </h5>
+                <div class="mt-6" data-aos="zoom-in">
+                    <button
+                        class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                        type="button">
+                        <i class="flex fab fa-twitter"></i></button>
+                        <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                        type="button">
+                        <i class="flex fab fa-facebook-square"></i></button><button
+                        class="bg-white text-blue-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                        type="button">
+                        <i class="flex fab fa-linkedin"></i></button><button
+                        class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                        type="button">
+                        <i class="flex fab fa-github"></i>
+                      
+                  
+                    </button>
+                </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+                <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full lg:w-4/12 px-4 ml-auto">
+                        <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    href="#">Github</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                        <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+                        <ul class="list-unstyled">
+
+
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    href="#">Privacy Policy</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-gray-600 font-semibold py-1">
+                    Copyright © 2022 Peaceful Unicorn
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Creative Team</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) 
+      :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))}
+
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+
+
+<!-- animation -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  AOS.init({
+    delay: 200,
+    duration: 1000,
+    once:false,
+  })
+</script>
+
+
+</body>
+
+</html>
